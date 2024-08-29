@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    background: url(car-sunset-city-digital-art-hd-wallpaper-uhdpaper.com-261@2@a.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass {
+    width: 800px;
+    height: 600px;
+    background: linear-gradient(135deg,  rgba(255,255,255, 0.1), rgba(255,255,255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255, 0.18);
+    box-shadow: 0px 8px 32px 0px rgba(0,0,0, 0.37);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+h1{
+    color: antiquewhite;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-box{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(66, 18, 66);
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 55px;
+    
+}
+.input-box:nth-child(2){
+    margin-bottom: 0;
+}
+label{
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+input{
+    border: none;
+    background: transparent;
+    padding: 12px ;
+    width: 100%;
+    outline: none;
+    font-size: 24px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: .3s;
+
+}
+
+.form-btn{
+    width: 350px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: .3s;
+    color: aliceblue;
+    font-size: 21px;
+}   
+input:hover,
+.form-btn:hover{
+    box-shadow: 0px 2px 24px 0px red;
+}
+input:focus,
+.form-btn:focus{
+    box-shadow: 0px 2px 24px 0px red;
+}
+.d-none{
+    display: none;
+}
+
+.popUp{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #0009;
+    opacity: .9;
+}
+.popUp-content{
+    animation: popUp-show .5s linear;
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+    width: 450px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 250px auto;
+}
+h2{
+    font-size: 24px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+p{
+    font-size: 20px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.popUp-btn{
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #7b7878;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.hidePopUp{
+    animation: popUp-hide .3s linear;
+
+}
+@keyframes popUp-show {
+    from{
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+@keyframes popUp-hide {
+    from{
+      transform: scale(1)
+    }
+    to {
+      transform: scale(0)
+    }
+}
